@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil Engineering Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Civil Engineering Works</h1>
+    <form id="user-form">
+      <div class="form-group">
+        <label for="name">Client Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="door-no">Door Number</label>
+        <input type="text" id="door-no" placeholder="Enter door number" required>
+      </div>
+      <div class="form-group">
+        <label for="street">Street</label>
+        <input type="text" id="street" placeholder="Enter street name" required>
+      </div>
+      <div class="form-group">
+        <label for="city">District/City</label>
+        <input type="text" id="city" placeholder="Enter city" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" id="state" placeholder="Enter state" required>
+      </div>
+      <div class="form-group">
+        <label for="area">House Area (sq. ft.)</label>
+        <input type="number" id="area" placeholder="Enter house area" required>
+      </div>
+      <div class="form-group">
+        <label for="floor-size">Floor Size (in feet)</label>
+        <input type="number" id="floor-size" placeholder="Enter floor size" required>
+      </div>
+      <div class="form-group">
+        <label for="land-space">Free Land Space (sq. ft.)</label>
+        <input type="number" id="land-space" placeholder="Enter free land space" required>
+      </div>
+      <div class="form-group">
+        <label for="budget">Estimated Budget</label>
+        <input type="number" id="budget" placeholder="Enter estimated budget" required>
+      </div>
+      <button type="button" id="generate-pdf" class="btn" disabled>Generate Report</button>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
